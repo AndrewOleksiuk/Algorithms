@@ -32,23 +32,23 @@ float binary_search(float n){
     float mid = (low + high) / 2;
 
     float p = 0;
-    p = deg(n,mid);
+    p = deg(n, mid);
 
-    if (p < 2*PI)
+    if (p < 2 * PI)
       high = mid;
     else
       low = mid ;
 
   }
-  float z = (high+low)/2;
+  float z = (high+low) / 2;
   return z;
 
 }
 int main() {
-  float R,N;
+  float R, N;
 
-  cin » N;
+  cin >> N;
   R = binary_search(N);
-  cout «setprecision(5)«R;
+  cout << setprecision(5) << R;
   return 0;
 }
